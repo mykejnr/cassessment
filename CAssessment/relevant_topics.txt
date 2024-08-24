@@ -1,0 +1,11 @@
+﻿1. Model View Controller (MVC) Architecture
+2. Anonymous functions
+3. LINQ
+4. "out" and "ref" keywords
+5. switch statement
+6. nullable and non-nullable types
+7. Static vs Instance members
+8. do while loop
+9. Method overloading
+10.Documentation Comments https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/documentation-comments
+11.Exception Handling

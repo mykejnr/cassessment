@@ -1,5 +1,5 @@
 ﻿using CAssessment.Models;
-using CAssessment.Services;
+using CAssessment.Controllers;
 using CAssessment.Views;
 
 namespace CAssessment;
@@ -9,14 +9,14 @@ namespace CAssessment;
 /// </summary>
 public class Assessment
 {
-    private readonly StudentService _students;
-    private readonly AssessmentService _assessments;
-    private readonly CourseService _courses;
+    private readonly StudentController _students;
+    private readonly AssessmentController _assessments;
+    private readonly CourseController _courses;
     public Assessment(DataContext dContext)
     {
-        _courses = new CourseService(dContext);
-        _assessments = new AssessmentService(dContext, _courses);
-        _students = new StudentService(dContext, _courses, _assessments);
+        _courses = new CourseController(dContext);
+        _assessments = new AssessmentController(dContext, _courses);
+        _students = new StudentController(dContext, _courses, _assessments);
     }
 
     private bool _quit = false;

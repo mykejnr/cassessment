@@ -2,12 +2,12 @@
 using CAssessment.Models;
 using CAssessment.Views;
 
-namespace CAssessment.Services;
+namespace CAssessment.Controllers;
 
 /// <summary>
 /// Class responsible for managing (add, update, view) courses
 /// </summary>
-public class CourseService(DataContext dContext)
+public class CourseController(DataContext dContext)
 {
     /// <summary>
     /// Create and return a new <see cref="Course"/>

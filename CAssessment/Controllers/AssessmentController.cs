@@ -3,7 +3,7 @@ using CAssessment.Models;
 using CAssessment.ViewModels;
 using CAssessment.Views;
 
-namespace CAssessment.Services;
+namespace CAssessment.Controllers;
 
 
 /// <summary>
@@ -12,7 +12,7 @@ namespace CAssessment.Services;
 /// </summary>
 /// <param name="dContext"></param>
 /// <param name="courses"></param>
-public class AssessmentService(DataContext dContext, CourseService courses)
+public class AssessmentController(DataContext dContext, CourseController courses)
 {
     /// <summary>
     /// Enter marks (Register a new course) for a student
@@ -165,7 +165,7 @@ public class AssessmentService(DataContext dContext, CourseService courses)
     /// <returns>
     /// The selected <see cref="Course"/> from the displayed table view.
     /// <para>
-    /// Returns <see cref="null"/> if no course is selected, or the student
+    /// Returns null if no course is selected, or the student
     /// has not course registered for them
     /// </para>
     /// </returns>

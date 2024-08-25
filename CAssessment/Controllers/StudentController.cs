@@ -2,12 +2,12 @@
 using CAssessment.Models;
 using CAssessment.Views;
 
-namespace CAssessment.Services;
+namespace CAssessment.Controllers;
 
 /// <summary>
 /// Class responsible for managing (add, update, view) students
 /// </summary>
-public class StudentService(DataContext dContext, CourseService courses, AssessmentService assessments)
+public class StudentController(DataContext dContext, CourseController courses, AssessmentController assessments)
 {
     /// <summary>
     /// Create and return a student

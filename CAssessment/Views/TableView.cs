@@ -198,7 +198,7 @@ public class TableView<T>  where T : ITableItem
         var topBorder = ML + "+" + "".PadRight(_width, '-') + "+";
         Console.WriteLine(topBorder);
 
-        // We are trying to center the table
+        // We are trying to center align the table title
         // Se we find the extra space (difference of _width and title lenghth)
         // and divide it by two, there by getting an even left and and right paddings
         var padding = (_width - _title.Length) / 2;
